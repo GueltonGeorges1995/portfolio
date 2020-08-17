@@ -1,0 +1,17 @@
+.header-bg {
+    height: 100vh;
+    background-image: url('../assets/images/bg-header.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.padding-top-header-content {
+    padding-top: 20rem;
+}
+.position-header-arrow {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+}
+.arrow-size {
+    font-size: 2rem;
+}
