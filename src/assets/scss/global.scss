@@ -2,3 +2,34 @@
 @import'../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import'../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
 @import'../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+.py-10-rem {
+    padding: 10rem 0;
+}
+.underline-title-section {
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block;
+    color: darkblue;
+}
+.underline-title-section::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: darkblue;
+}
+
+.background-section {
+    background-color: #f5f5f5;
+}

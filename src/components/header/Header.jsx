@@ -1,14 +1,13 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import './header.scss';
-
-
 
 const Header = () => {
     return (
         <header className='header-bg' id='home'>
-            <Navbar bg="light" expand="lg" fixed="top">
+            <Navbar bg="light" expand="lg" fixed="top" className='px-5'>
                 <Navbar.Brand href="#home">Georges Guelton</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -18,6 +17,10 @@ const Header = () => {
                         <Nav.Link href="#portfolio">Portfolio</Nav.Link>
                         <Nav.Link href="#services">Services</Nav.Link>
                         <Nav.Link href="#contact">Contact</Nav.Link>
+                        <NavDropdown title="Language" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">French</NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -29,7 +32,6 @@ const Header = () => {
                 <a href="#about">
                     <i className="fas fa-arrow-down text-light text-center"></i>
                 </a>
-                
             </div>
         </header>
     )
