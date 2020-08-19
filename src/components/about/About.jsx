@@ -33,7 +33,7 @@ const About = () => {
                     <Col xl={4} lg={12}>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis culpa, tenetur eius nulla rerum pariatur? Magni culpa adipisci ipsam incidunt magnam rem eveniet tempore vitae esse ad, veritatis repellendus nesciunt?</p>
                     </Col>
-                    <Col xl={4} lg={12}>
+                    <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Row>
                             <Col xl={12} className='d-flex justify-content-around align-items-center'>
                                 <Image src={htmlIcon} fluid />
