@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import './header.scss';
 
 const Header = () => {
@@ -17,10 +17,6 @@ const Header = () => {
                         <Nav.Link href="#portfolio">Portfolio</Nav.Link>
                         <Nav.Link href="#services">Services</Nav.Link>
                         <Nav.Link href="#contact">Contact</Nav.Link>
-                        <NavDropdown title="Language" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">French</NavDropdown.Item>
-                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

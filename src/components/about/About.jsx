@@ -1,20 +1,25 @@
-import React,{useState, useEffect} from 'react';
+import React from 'react';
 import './about.scss';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import Image from 'react-bootstrap/Image'
+
+import htmlIcon from '../../assets/icons/icons8-html-5.svg';
+import cssIcon from '../../assets/icons/icons8-css3.svg';
+import javascriptIcon from '../../assets/icons/icons8-javascript.svg';
+import reactIcon from '../../assets/icons/icons8-react.svg';
+import vueIcon from '../../assets/icons/icons8-vue-js.svg';
+import wordpressIcon from '../../assets/icons/icons8-wordpress.svg';
+import phpIcon from '../../assets/icons/icons8-php-logo.svg';
+import laravelIcon from '../../assets/icons/laravel-2.svg';
+import bootstrapIcon from '../../assets/icons/icons8-bootstrap.svg';
+import vuetifyIcon from '../../assets/icons/vuetify.svg';
+import materialuiIcon from '../../assets/icons/icons8-material-ui.svg';
+import nodeIcon from '../../assets/icons/icons8-nodejs.svg'
 
 const About = () => {
-    const [progressBar, setProgressBar] = useState([0,0,0,0,0,0,0]);
-     useEffect(() => {
-         window.addEventListener('scroll' ,() =>{
-            const isTop = window.scrollY > 300
-            if (isTop) {
-                setProgressBar([90,90,80,85,80,70,78]);
-            }
-        })
-     }, [])
+    
     return (
         <div className='py-10-rem' id='about'>
             <Container>
@@ -22,21 +27,41 @@ const About = () => {
                     <h2 className='underline-title-section'>About Me</h2>
                 </div>
                 <Row className='mt-5'>
-                    <Col xl='4' lg='12'>
+                    <Col xl={4} lg={12}>
                         <p>Hi ! Welcome to my portfolio I'm a junior <span>Web Developer</span> from Brussel</p>
-                        
                     </Col>
-                    <Col xl='4' lg='12'>
+                    <Col xl={4} lg={12}>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis culpa, tenetur eius nulla rerum pariatur? Magni culpa adipisci ipsam incidunt magnam rem eveniet tempore vitae esse ad, veritatis repellendus nesciunt?</p>
                     </Col>
-                    <Col xl='4' lg='12'>
-                        <ProgressBar label='HTML' now={progressBar[0]}  className='mb-2' />
-                        <ProgressBar label='CSS' now={progressBar[1]} className='mb-2' />
-                        <ProgressBar label='JS' now={progressBar[2]} className='mb-2'/>
-                        <ProgressBar label='REACTJS' now={progressBar[3]} className='mb-2'/>
-                        <ProgressBar label='VUEJS' now={progressBar[4]} className='mb-2'/>
-                        <ProgressBar label='WORDPRESS' now={progressBar[5]} className='mb-2'/>
-                        <ProgressBar label='PHP LARAVEL' now={progressBar[6]} className='mb-2'/>
+                    <Col xl={4} lg={12}>
+                        <Row>
+                            <Col xl={12} className='d-flex justify-content-around align-items-center'>
+                                <Image src={htmlIcon} fluid />
+                                <Image src={cssIcon} fluid />
+                                <Image src={javascriptIcon} fluid />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xl={12} className='d-flex justify-content-around align-items-center'>
+                                <Image src={reactIcon} fluid />
+                                <Image src={vueIcon} fluid />
+                                <Image src={wordpressIcon} fluid />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xl={12} className='d-flex justify-content-around align-items-center'>
+                                <Image src={phpIcon} fluid />
+                                <Image src={laravelIcon} fluid className='icon-laravel-about' />
+                                <Image src={nodeIcon} fluid />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xl={12} className='d-flex justify-content-around align-items-center'>
+                                <Image src={vuetifyIcon} fluid className='icon-laravel-about' />
+                                <Image src={materialuiIcon} fluid  />
+                                <Image src={bootstrapIcon} fluid />
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
