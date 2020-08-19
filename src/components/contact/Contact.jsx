@@ -33,14 +33,14 @@ const Contact = () => {
             <div className='text-center'>
                 <h2 className='underline-title-section'>Contact</h2>
             </div>
-            <Container>
+            <Container className='mt-5'>
                 <Form onSubmit={handleSubmit} id='myForm'>
                     <Form.Group controlId="formGroupEmail">
-                        <Form.Label>Your Email Address</Form.Label>
+                        <Form.Label className='subtitle-contact'>Your Email Address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" onChange={handleInputMail} name='email' />
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Your Message</Form.Label>
+                        <Form.Label className='subtitle-contact'>Your Message</Form.Label>
                         <Form.Control as="textarea" rows="3" placeholder='Type your message' onChange={handleInputMessage} name='message' />
                     </Form.Group>
                     <Button className='btn-submit-contact' type='submit'>Send</Button>
