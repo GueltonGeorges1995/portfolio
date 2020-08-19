@@ -57,8 +57,8 @@ const Portfolio = () => {
                 <div className='text-center'>
                     <h2 className='underline-title-section'>My Work</h2>
                 </div>
-                <Row className='mt-5'>
-                    <Col xl='4' lg='12'>
+                <Row>
+                    <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Image src={imgPortfolio1} rounded fluid onClick={handleShow1} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
                             <h5 className='mt-4 portfolio-subtitle'>Authscorp Landing Page</h5>
@@ -76,7 +76,7 @@ const Portfolio = () => {
                             </Modal.Footer>
                         </Modal>
                     </Col>
-                    <Col xl='4' lg='12'>
+                    <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Image src={imgPortfolio2} rounded fluid onClick={handleShow2} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
                             <h5 className='mt-4 portfolio-subtitle'>Spreading Seeds Landing Page</h5>
@@ -96,7 +96,7 @@ const Portfolio = () => {
                             </Modal.Footer>
                         </Modal>
                     </Col>
-                    <Col xl='4' lg='12'>
+                    <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Image src={imgPortfolio3} rounded fluid onClick={handleShow3} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
                             <h5 className='mt-4 portfolio-subtitle'>Project Manager</h5>
@@ -117,8 +117,8 @@ const Portfolio = () => {
                         </Modal>
                     </Col>
                 </Row>
-                <Row className='mt-5'>
-                    <Col xl='4' lg='12'>
+                <Row>
+                    <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Image src={imgPortfolio4} rounded fluid onClick={handleShow4} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
                             <h5 className='mt-4 portfolio-subtitle'>Pizza Animation</h5>
@@ -138,7 +138,7 @@ const Portfolio = () => {
                             </Modal.Footer>
                         </Modal>
                     </Col>
-                    <Col xl='4' lg='12'>
+                    <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Image src={imgPortfolio5} rounded fluid onClick={handleShow5} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
                             <h5 className='mt-4 portfolio-subtitle'>Artist Portfolio</h5>
@@ -158,7 +158,7 @@ const Portfolio = () => {
                             </Modal.Footer>
                         </Modal>
                     </Col>
-                    <Col xl='4' lg='12'>
+                    <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                       <Image src={imgPortfolio6} rounded fluid onClick={handleShow6} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
                             <h5 className='mt-4 portfolio-subtitle'>Old Portfolio</h5>
