@@ -57,7 +57,7 @@ const Portfolio = () => {
                 <div className='text-center'>
                     <h2 className='underline-title-section'>My Work</h2>
                 </div>
-                <Row>
+                <Row className='mt-xl-5 mt-lg-0'>
                     <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Image src={imgPortfolio1} rounded fluid onClick={handleShow1} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
