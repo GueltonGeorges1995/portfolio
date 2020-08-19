@@ -1,0 +1,15 @@
+.bg-icon-services {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: darkblue;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-services-size {
+    font-size: 3rem;
+}
+
+.title-icon-services {
+    color: #616161;
+}
