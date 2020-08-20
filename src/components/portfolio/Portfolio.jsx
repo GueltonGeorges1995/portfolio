@@ -117,7 +117,7 @@ const Portfolio = () => {
                         </Modal>
                     </Col>
                 </Row>
-                <Row>
+                <Row className='mt-xl-5 mt-lg-0'>
                     <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Image src={imgPortfolio4} rounded fluid onClick={handleShow4} className='opacity-hover-img-portfolio shadow' />
                         <div className='text-center'>
