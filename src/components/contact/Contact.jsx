@@ -22,7 +22,7 @@ const Contact = () => {
     }
 
     return (
-        <div id='contact' className='py-10-rem background-section'>
+        <div id='contact' className='pt-10-rem pb-15-rem background-section'>
             <div className='text-center'>
                 <h2 className='underline-title-section'>Contact</h2>
             </div>
