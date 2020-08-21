@@ -1,42 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import './header.scss';
-const Header = () => {
-
- const [positionScroll, setPositionScroll] = useState(window.scrollY)   
-
-useEffect(() => {
-    setPositionScroll(window.scrollY)
-    console.log('hi');
-}, [positionScroll])
-
+const Header = ({position}) => {
     return (
         <header className='header-bg' id='home'>
-            <Navbar bg="light" expand="lg" fixed="top" className='px-5'>
-                <Navbar.Brand href="#home">Georges Guelton</Navbar.Brand>
+            <Navbar expand="lg" fixed="top" className={position ? 'bg-light px-5' : 'bg-blue px-5'}>
+                <Navbar.Brand href="#home" className={position ? '' : 'text-light'}>Georges Guelton</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Link href="#home" to="home" spy={true}  activeClass="active" className='nav-link'>Home</Link>
-                        <Link href="#about" to="about" spy={true}  activeClass="active" className='nav-link'>About</Link>
-                        <Link href="#portfolio" to="portfolio" spy={true}  activeClass="active" className='nav-link'>Portfolio</Link>
-                        <Link href="#services" to="services" spy={true}  activeClass="active" className='nav-link'>Services</Link>
-                        <Link href="#contact" to="contact" spy={true}  activeClass="active" className='nav-link'>Contact</Link>
+                        <Link href="#home" to="home" spy={true}  activeClass="active" className={position ? 'nav-link' : 'nav-link text-light'}>Home</Link>
+                        <Link href="#about" to="about" spy={true}  activeClass="active" className={position ? 'nav-link' : 'nav-link text-light'}>About</Link>
+                        <Link href="#portfolio" to="portfolio" spy={true}  activeClass="active" className={position ? 'nav-link' : 'nav-link text-light'}>Portfolio</Link>
+                        <Link href="#services" to="services" spy={true}  activeClass="active" className={position ? 'nav-link' : 'nav-link text-light'}>Services</Link>
+                        <Link href="#contact" to="contact" spy={true}  activeClass="active" className={position ? 'nav-link' : 'nav-link text-light'}>Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
             <div className='padding-top-header-content'>
                 <h1 className='text-light text-center'>Georges Guelton</h1>
                 <h2 className='text-light text-center'>Web Developer</h2>
-                {/* <button onClick={()=>console.log( window.scrollY)}>test</button> */}
             </div>
             <div className='text-center position-header-arrow arrow-size'>
                 <a href="#about">
                     <i className="fas fa-arrow-down text-light text-center"></i>
                 </a>
+                
             </div>
         </header>
     )
