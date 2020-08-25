@@ -28,10 +28,12 @@ const About = () => {
                 </div>
                 <Row className='mt-5'>
                     <Col xl={4} lg={12}>
-                        <p>Hi ! Welcome to my portfolio I'm a junior <span>Web Developer</span> from Brussel</p>
+                        <p>
+                            Hi ! Welcome to my portfolio. I'm a junior <span>Web Developer</span> from Brussel. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                        </p>
                     </Col>
                     <Col xl={4} lg={12}>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis culpa, tenetur eius nulla rerum pariatur? Magni culpa adipisci ipsam incidunt magnam rem eveniet tempore vitae esse ad, veritatis repellendus nesciunt?</p>
+                        <p>These are all the technologies I've already worked with. I'm always excited about new projects so let's make something special together ! Feel free <a href="#contact" className='link-about'>to contact me</a></p>
                     </Col>
                     <Col xl={4} lg={12} className='mt-xl-0 mt-5'>
                         <Row>
