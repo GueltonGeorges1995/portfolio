@@ -9,7 +9,7 @@ const Header = ({position}) => {
         <header className='header-bg' id='home'>
             <Navbar expand="lg" fixed="top" className={position ? 'bg-light px-5' : 'bg-blue px-5'}>
                 <Navbar.Brand href="#home" className={position ? '' : 'text-light'}>Georges Guelton</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className={position ? '' : 'bg-light'} />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Link href="#home" to="home" spy={true}  activeClass="active" className={position ? 'nav-link' : 'nav-link text-light'}>Home</Link>
