@@ -72,7 +72,7 @@ const Portfolio = () => {
                             <Button variant="secondary" onClick={handleClose1}>
                                 Close
                             </Button>
-                                <a href="https://www.google.com" className='text-light link-portfolio btn btn-primary' target='_blank' rel='noopener noreferrer' onClick={handleClose1}>See More</a>
+                                <a href="https://portfolio-georges-guelton.vercel.app/" className='text-light link-portfolio btn btn-primary' target='_blank' rel='noopener noreferrer' onClick={handleClose1}>See More</a>
                             </Modal.Footer>
                         </Modal>
                     </Col>
